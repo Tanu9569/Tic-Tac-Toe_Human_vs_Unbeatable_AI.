@@ -1,0 +1,176 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #edd2c7;
+  text-align: center;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+  font-size: 8vmin;
+  color: #66023c;
+  background-color: #feb0b5;
+}
+
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #473144;
+  color: #feb0b5;
+  border-radius: 1rem;
+  border: none;
+}
+
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #473144;
+  color: pink;
+  border-radius: 1rem;
+  border: none;
+}
+
+#msg {
+  color: black;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
+
+#sign-selection {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #ed828d;
+  text-align: center;
+}
+
+#sign-selection h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sign-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.sign-buttons button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(102, 2, 60);
+}
+
+#choose-x {
+  background-color: #007BFF;
+  color: white;
+}
+
+#choose-o {
+  background-color: #28A745;
+  color: white;
+}
+
+.sign-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sign-buttons button:active {
+  transform: translateY(0px);
+  box-shadow: none;
+}
+
+.winner {
+  background-color: #4caf50; /* green background */
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+#winner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  color: #d9b6ba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#winner-overlay.hide {
+  display: none;
+}
+.winner-message {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#winner-text {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#play-again-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+}
